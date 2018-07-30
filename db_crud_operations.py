@@ -9,9 +9,9 @@ DBSession=sessionmaker(bind=engine)
 
 session=DBSession()
 
-mySecondRestaurant= Restaurant(name="Tiffins")
-session.add(mySecondRestaurant)
-session.commit()
+#mySecondRestaurant= Restaurant(name="Tiffins")
+#session.add(mySecondRestaurant)
+#session.commit()
 session.query(Restaurant).all()
 
 for i in session.query(Restaurant).all():
